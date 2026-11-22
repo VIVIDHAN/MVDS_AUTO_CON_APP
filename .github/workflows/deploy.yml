@@ -111,7 +111,7 @@ jobs:
           retention-days: 14
 
       - name: Deploy APK to Production Server Public Download Directory
-        if: env.APK_READY == 'true' && secrets.EC2_SSH_KEY != ''
+        if: env.APK_READY == 'true' && github.ref == 'refs/heads/main'
         uses: appleboy/scp-action@v0.1.7
         continue-on-error: true
         with:
