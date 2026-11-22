@@ -1,0 +1,23 @@
+{
+  "name": "mvds-workspace",
+  "version": "1.0.0",
+  "description": "Full-stack workspace for Mani Vehicles Sales and Service Maintenance App (MVDS)",
+  "scripts": {
+    "server": "cd backend && npm start",
+    "db:setup": "cd backend && npm run setup",
+    "app": "cd MVDSApp && npm start",
+    "android": "cd MVDSApp && npm run android",
+    "ios": "cd MVDSApp && npm run ios",
+    "lint": "cd MVDSApp && npm run lint",
+    "test:api": "cd backend && node -e \"require('./server')\""
+  },
+  "keywords": [
+    "react-native",
+    "mysql",
+    "dealership",
+    "automotive",
+    "mvds"
+  ],
+  "author": "Mani Vehicles",
+  "license": "ISC"
+}
